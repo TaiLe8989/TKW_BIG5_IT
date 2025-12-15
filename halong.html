@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới Thiệu Ẩm Thực Tỉnh Thành Việt Nam</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script>
+      // Function to check if the user is logged in
+      function checkIfLoggedIn() {
+        const loggedInUser = localStorage.getItem("loggedInUser");
+
+        // If user is logged in, return the user object
+        return JSON.parse(loggedInUser);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app-container">
+      <header>
+        <button id="hamburger-btn" class="menu-icon" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <h1 class="logo">Ẩm Thực Đặc Sản Tỉnh Thành Việt Nam</h1>
+        <span id="welcomeMessage">
+            <a href='login.html' id='signin-btn' class='sign-in-btn'>Đăng Nhập</a>
+        </span>
+        <script>
+              // Function to display the username on the welcome page
+              function displayUsername() {
+                const user = checkIfLoggedIn();
+                const welcomeMessage =
+                  document.getElementById("welcomeMessage");
+
+                if (user) {
+                  welcomeMessage.innerText = "Welcome, " + user.username + "!";
+                }
+              }
+
+              // Call the displayUsername function on page load
+              displayUsername();
+            </script>
+
+        
+    
+        <!-- Menu dropdown -->
+        <nav id="dropdown-menu" class="dropdown-menu">
+          <a href="login.html">Đăng nhập</a>
+          <a href="about.html" id="about.html">Về chúng tôi</a>
+          <a href="home.html" id="home-link">Trang Chủ</a>
+        </nav>
+      </header>
+
+      <div id="main-structure">
+        <main id="main-content">
+          <section id="detail-page" class="view active-view">
+            <h2 class="detail-title">
+              GIỚI THIỆU ẨM THỰC THÀNH PHỐ <span id="city-name">HẠ LONG</span>
+            </h2>
+            
+            <p class="city-overview"></p>
+
+            <hr />
+            <h3>
+            Khi đến với vùng vịnh, nếm thử đặc sản Hạ Long là những trải nghiệm không thể thiếu. Tuy nhiên, bạn đang băn khoăn không biết nên thưởng thức món ngon nào? Thay vì thắc mắc, bạn hãy tham khảo ngay thực đơn dưới đây để có lựa chọn cho mình nhé.            </h3>
+            <div class="food-module">
+              <h3>1. Chả mực </h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://statics.vinpearl.com/dac-san-ha-long-3%20(1)_1632208930_1720337533.jpg"
+                    alt="Ảnh  Chả mực  (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Món ăn này có nguyên liệu chính là thịt mực giã hoặc xay nhuyễn, tạo hình bánh tròn và chiên chín. Đặc biệt, chả mực ở nơi đây mang vị ngọt hơn so với các vùng khác nên được rất nhiều thực khách ưa chuộng.
+Thưởng thức gỏi cá đục là phải có rau thơm và các loại lá như rau ngót, rau má, lá xoài non,... cùng xoài xanh, khế chua, chuối xanh thái mỏng. Khi ăn, cuốn cá với bánh đa, chấm vào nước dùng, du khách sẽ cảm nhận được vị đậm đà của cá, vị bùi của dừa, vị cay, chua, ngọt thanh mát, thực sự rất đặc biệt và không nơi nào sánh bằng.
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Quán ăn Quang Phong - lô C112A, khu phố cổ</li>
+                  
+                </ul>
+              </div>
+            </div>
+
+            
+            <div class="food-module">
+              <h3>2.Gà đồi Tiên Yên</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://statics.vinpearl.com/dac-san-ha-long-6%20(1)_1632209021.JPG"
+                    alt="Ảnh Gà đồi Tiên Yên (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+Đặc sản Hạ Long còn có món gà đồi Tiên Yên trứ danh với phần thịt nhiều nạc, dai. Từng con gà được nuôi bằng phương pháp tự nhiên, tự kiếm ăn nên mang vị thơm đặc biệt. Cùng với đó là lớp da vàng óng, gia vị vừa miệng khiến cho thực khách nhớ mãi không thôi.                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>nhà hàng Cỏ Xanh 2, Giếng Đáy, Bãi Cháy </li>
+                  
+                </ul>
+              </div>
+            </div>
+
+            <div class="food-module">
+              <h3>3.Cháo hà</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://statics.vinpearl.com/dac-san-ha-long-8%20(1)_1632209081.jpg"
+                    alt="Ảnh Cháo Hà (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                Đặc sản của vịnh Hạ Long không thể bỏ qua món cháo hà ngọt, thơm, giàu dinh dưỡng. Chỉ với một tô cháo nhỏ cũng nhanh chóng xua tan cảm giác đói bụng của bạn. Đồng thời, bạn cũng nạp thêm năng lượng cho cơ thể giúp chuyến đi đầy hứng khởi.                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                   <li>quán hải sản đêm 170 - phố Giếng Đồn, phường Hồng Gai</li>
+                </ul>
+              </div>
+            </div>
+
+             <div class="food-module">
+              <h3>4.Cháo hàu sữa</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://statics.vinpearl.com/dac-san-ha-long-9%20(1)_1632209111.jpg"
+                    alt="Ảnh Cháo hàu sữa (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Cháo hàu sữa là đặc sản ở Hạ Long vừa thơm ngon vừa bổ dưỡng. Nếm thử món ăn này cũng là lúc bạn dung nạp thêm nhiều vitamin, dưỡng chất cho cơ thể. Đồng thời, món cháo còn có tác dụng hỗ trợ điều trị các bệnh liên quan đến huyết áp, đau nhức đầu, tiểu đường.
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>nhà hàng Khánh Ly - đường Hùng Vương, Móng Cái 2</li>
+                  
+                </ul>
+              </div>
+            </div>
+            <div class="food-module">
+              <h3>5.Bánh gật gù</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://statics.vinpearl.com/dac-san-ha-long-10%20(1)_1632209138.JPG"
+                    alt="Ảnh Bánh gật gù (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Bánh gật gù không chỉ được biết đến là đặc sản nổi bật của vùng vịnh, mà còn là món ăn sáng Hạ Long được đông đảo dân địa phương và du khách tứ phương yêu thích. Khi thưởng thức bạn sẽ nếm trọn vị ngon, dai, thơm và mềm, chấm thêm với nước mỡ gà càng đậm đà.
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>chợ đêm Hạ Long - Đại lộ Hạ Long Marine, Bãi Cháy</li>
+                </ul>
+              </div>
+            </div>
+            <div class="food-module">
+              <h3>6.Sá sùng</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://statics.vinpearl.com/dac-san-ha-long-15%20(1)_1632209272.JPG"
+                    alt="Ảnh Sá Sùng (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+Sá sùng được biết đến là loại hải sản đặc trưng ở Vân Đồn, Hạ Long, Móng Cái. Tên của chúng có nhiều cách gọi khác nhau như sâu đất, trùng biển, bibi, địa sâm. Giá trị dinh dưỡng của đặc sản này rất cao và chữa được các bệnh như ra mồ hôi đêm, đau thắt ngực, thiếu sữa sau sinh, suy nhược thần kinh, tiểu đêm.
+Một trong những món ngon bạn nhất định phải nếm thử chính là sá sùng xào cần tỏi. Từng hương vị hòa quyện lại với nhau tạo ra mùi thơm đậm đà, ăn rất hao cơm. Nhâm nhi đặc sản này cùng với bạn bè thật không còn gì tuyệt vời hơn.</p></h3>
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                   <li>nhà hàng Hương Duyên Hòn Gai - 31 Tòa A, chung cư Lideco, Trần Hưng Đạo, phường Hà Lầm</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </main>
+
+           <aside id="right-sidebar">
+          <h3>Ẩm thực theo các tỉnh thành</h3>
+         <div class="search-box">
+           <form autocomplete="off" id="search_form">
+              <div class="autocomplete">
+                <input
+                  id="myInput"
+                  type="text"
+                  name="myCountry"
+                  placeholder="Tìm kiếm"
+                />
+              </div>
+              <input type="submit" />
+              <span></span>
+            </form>
+          </div>
+
+          <div class="social-links">
+            <a
+              href="https://zalo.me/0589368989"
+              target="_blank"
+              class="social-icon zalo-icon"
+              ><i class="fas fa-comment-dots"></i> Zalo</a
+            >
+            <a
+              href="https://www.facebook.com/Lmt8989?locale=vi_VN"
+              target="_blank"
+              class="social-icon facebook-icon"
+              ><i class="fab fa-facebook-f"></i> Facebook</a
+            >
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        <p>&copy; Food VN. Món Ăn Đặc Sản Tỉnh Thành Việt Nam</p>
+      </footer>
+    </div>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="script.js"></script>
+  </body>
+</html>

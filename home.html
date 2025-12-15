@@ -1,0 +1,190 @@
+git<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới Thiệu Ẩm Thực Tỉnh Thành Việt Nam</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script>
+      // Function to check if the user is logged in
+      function checkIfLoggedIn() {
+        const loggedInUser = localStorage.getItem("loggedInUser");
+
+        // If user is logged in, return the user object
+        return JSON.parse(loggedInUser);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app-container">
+      <header>
+        <button id="hamburger-btn" class="menu-icon" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <h1 class="logo">Ẩm Thực Đặc Sản Tỉnh Thành Việt Nam</h1>
+        <span id="welcomeMessage">
+            <a href='login.html' id='signin-btn' class='sign-in-btn'>Đăng Nhập</a>
+        </span>
+        <script>
+              // Function to display the username on the welcome page
+              function displayUsername() {
+                const user = checkIfLoggedIn();
+                const welcomeMessage =
+                  document.getElementById("welcomeMessage");
+
+                if (user) {
+                  welcomeMessage.innerText = "Welcome, " + user.username + "!";
+                }
+              }
+
+              // Call the displayUsername function on page load
+              displayUsername();
+            </script>
+
+        
+    
+        <!-- Menu dropdown -->
+        <nav id="dropdown-menu" class="dropdown-menu">
+          <a href="login.html">Đăng nhập</a>
+          <a href="about.html" id="about.html">Về chúng tôi</a>
+          <a href="home.html" id="home-link">Trang Chủ</a>
+        </nav>
+      </header>
+
+    <div id="main-structure">
+        <main id="main-content">
+          <section id="detail-page" class="view active-view">
+            <h2 class="detail-title">Văn hóa ẩm thực Việt Nam có gì hấp dẫn du khách khắp thế giới
+              <span id="city-name"></span>
+            </h2>
+
+            <p class="city-overview"></p>
+
+            <hr />
+           
+                      <div class="food-module">
+              <h3>Giới thiệu tổng quan về ẩm thực Việt Nam</h3>
+               <div class="food-info">
+                <p>
+                 <ul>
+                  <br>Ẩm thực là một trong những phần không thể thiếu của một nền văn hoá, là tấm gương phản chiếu lịch sử, địa lý và lối sống của một dân tộc. Đối với văn hoá ẩm thực Việt Nam cũng vậy, những món ăn không chỉ được truyền từ thế hệ này sang thế hệ khác mà còn không ngừng được sáng tạo, phát triển. Giữ gìn và phát huy những món ăn truyền thống là một trong những phương pháp bảo tồn văn hoá ẩm thực Việt Nam, đồng thời giới thiệu nó ra thế giới.
+        <br>
+             <br> Do đất nước hình chữ S được chia thành ba miền rõ rệt: Bắc - Trung - Nam, nên ẩm thực Việt Nam từ đó cũng mang những nét đặc trưng riêng biệt theo từng vùng miền. Sự khác biệt về khí hậu, thổ nhưỡng, và lịch sử đã góp phần tạo nên sự phong phú, đa dạng trong ẩm thực Việt Nam. Mỗi vùng miền sẽ có khẩu vị, cách chế biến, và thậm chí cả tên gọi món ăn khác nhau, tạo nên một bức tranh ẩm thực đầy màu sắc và hấp dẫn.
+     <br>
+        <br>Mỗi lần nhắc về văn hoá ẩm thực Việt Nam, đó lại là chủ đề luôn được thảo luận một cách sôi nổi. Không chỉ dừng lại ở những món ăn, công thức chế biến và những nguyên liệu thực phẩm, mà hơn hết, nó còn chứa đựng một nét văn hoá tự nhiên được hình thành trong cuộc sống. Những món ăn Việt Nam đều được hài hoà về màu sắc cho đến hương vị, kết hợp tinh tế giữa các yếu tố ngũ hành (Kim, Mộc, Thuỷ, Hoả, Thổ) và ngũ vị (chua, cay, mặn, ngọt, đắng), khiến cho tổng thể món ăn hợp lý, tăng thêm phần hấp dẫn khó lòng cưỡng lại, đặc biệt nhất là đối với những người yêu thích khám phá ẩm thực.
+        <br>
+
+            </ul>
+                </p>
+             
+              </div>
+              <div class="food-detail-header">
+                <img
+                  src="https://dulichviet.com.vn/images/bandidau/net-van-hoa-am-thuc-viet-nam-xua-va-nay.jpg"
+                  alt="Ảnh mâm cơm Việt Nam (Ảnh sưu tầm)
+                  class="food-image
+                />
+              </div>
+         <br><h3>Văn hóa ẩm thực Việt Nam: Sự tinh tế trong từng món ăn và câu chuyện lịch sử.
+
+Nét đặc trưng về ẩm thực Việt Nam</h3>
+               <div class="food-info">
+                <p>
+                 <ul>
+                  <br>Người dân Việt Nam thường rất coi trọng sự hài hoà của món ăn, không chỉ về hương vị mà còn về màu sắc và giá trị dinh dưỡng. Một món ăn cần phải đáp ứng đủ được hai tiêu chí đó chính là ngon miệng và đẹp mắt, thể hiện sự khéo léo và tinh tế của người đầu bếp. Những thành phần nguyên liệu được bổ dưỡng, lành mạnh như rau, thịt, củ quả, được kết hợp nhuần nhuyễn với nhau để tạo ra một món ăn vừa có rau vừa có thịt, đảm bảo cân bằng dinh dưỡng và hương vị.
+        <br>
+             <br> Điều này giúp cho văn hoá ẩm thực Việt Nam khác biệt rõ rệt so với ẩm thực ở phương Tây, nơi mà thịt thường được dùng làm trung tâm chính của món ăn, hoặc ẩm thực Trung Hoa với nhiều món chiên xào sử dụng dầu mỡ. Một số đặc trưng nổi bật ở ẩm thực Việt Nam mà du khách có thể dễ dàng nhận biết là:
+     <br>
+            <p><br>
+                <strong>Sự tươi ngon và thanh đạm:</strong> Các món ăn Việt Nam chủ yếu đều được chế biến từ rau, củ, quả tươi sống, ít dầu mỡ và không quá nhiều thịt. Điều này không chỉ tốt cho sức khỏe mà còn giữ được hương vị tự nhiên của nguyên liệu.
+     <br>     
+     <br>
+                <strong>Hương vị đa dạng, hài hòa:</strong> Đặc biệt khi chế biến những món ăn, Việt Nam thường chỉ sử dụng mắm để nêm nếm, kết hợp với những loại gia vị đặc trưng như ớt, chanh, tỏi, gừng, sả để tạo ra được sự kết hợp chua, cay, mặn, ngọt một cách cân bằng. Nước mắm, một loại gia vị truyền thống, đóng vai trò quan trọng trong việc định hình hương vị đặc trưng của nhiều món ăn Việt.
+     <br>
+     <br>
+                <strong>Tính cộng đồng: </strong> Bữa ăn của người Việt thường là bữa ăn gia đình, các món ăn được dọn ra cùng lúc và mọi người cùng chia sẻ. Điều này thể hiện tinh thần đoàn kết, gắn bó trong văn hóa Việt.
+      <br>
+      <br>
+                <strong>Sự ảnh hưởng từ lịch sử và địa lý:</strong> Ẩm thực Việt Nam còn chịu ảnh hưởng sâu sắc từ lịch sử giao thoa văn hóa và điều kiện địa lý. Các món ăn có thể mang dấu ấn của ẩm thực Trung Hoa, Pháp, hay các nước láng giềng, nhưng luôn được Việt hóa để phù hợp với khẩu vị và nguyên liệu địa phương. Ví dụ, món bánh mì, dù có nguồn gốc từ Pháp, đã trở thành một món ăn đường phố biểu tượng của Việt Nam với nhân đa dạng và hương vị đặc trưng.
+            </ul>   
+                </p>
+                      
+ <div class="food-detail-header">
+                <img
+                  src="https://statics.vinpearl.com/dac-san-viet-nam-01_1635331121.jpg"
+                  alt="Ảnh đặc sản các vùng miền ở Việt Nam (Ảnh sưu tầm)
+                  class="food-image
+                />
+              </div>
+            <br><h3>Lời khuyên cho du khách khi khám phá ẩm thực Việt Nam</h3>
+            
+            <div><br>
+                <strong>Thời điểm lý tưởng để khám phá: </strong> Bạn có thể khám phá ẩm thực Việt Nam vào bất kỳ thời điểm nào trong năm, nhưng mỗi mùa lại có những món ăn đặc trưng riêng. Mùa hè có nhiều loại trái cây nhiệt đới tươi ngon, trong khi mùa đông ở miền Bắc lại thích hợp để thưởng thức các món nóng hổi như lẩu, phở.
+     <br>     
+     <br>
+                <strong>Phương tiện di chuyển: </strong> Để tiện lợi nhất khi khám phá ẩm thực đường phố, bạn nên di chuyển bằng xe máy (nếu có kinh nghiệm), xe đạp hoặc đi bộ. Taxi và các ứng dụng gọi xe cũng rất phổ biến và tiện lợi.
+     <br>
+     <br>
+                <strong>Đừng ngại thử món mới: </strong> Ẩm thực Việt Nam rất đa dạng, hãy mạnh dạn thử những món ăn mà bạn chưa từng nghe tên. Rất có thể bạn sẽ tìm thấy món yêu thích mới của mình.
+      <br>
+      <br>
+                <strong>Hỏi người dân địa phương: </strong> Người dân Việt Nam rất thân thiện và sẵn lòng giới thiệu những quán ăn ngon, những món đặc sản địa phương mà có thể bạn không tìm thấy trong sách hướng dẫn.
+     <br>
+     <br>
+                <strong>Chụp ảnh để lưu giữ kỷ niệm: </strong> Ẩm thực Việt Nam không chỉ ngon mà còn rất đẹp mắt. Đừng quên chụp những bức ảnh sống động để lưu giữ kỷ niệm về hành trình ẩm thực của mình.
+      <br>
+      <br>
+                <strong>Học một vài câu tiếng Việt cơ bản: </strong> Những câu như "Ngon quá!" (Delicious!), "Cảm ơn" (Thank you) sẽ giúp bạn giao tiếp và tạo thiện cảm với người bán hàng.
+</div>
+          </section>
+        </main>
+
+        <aside id="right-sidebar">
+          <h3>Ẩm thực theo các tỉnh thành</h3>
+         <div class="search-box">
+           <form autocomplete="off" id="search_form">
+              <div class="autocomplete">
+                <input
+                  id="myInput"
+                  type="text"
+                  name="myCountry"
+                  placeholder="Tìm kiếm"
+                />
+              </div>
+              <input type="submit" />
+              <span></span>
+            </form>
+          </div>
+
+          <div class="social-links">
+            <a
+              href="https://zalo.me/0589368989"
+              target="_blank"
+              class="social-icon zalo-icon"
+              ><i class="fas fa-comment-dots"></i> Zalo</a
+            >
+            <a
+              href="https://www.facebook.com/Lmt8989?locale=vi_VN"
+              target="_blank"
+              class="social-icon facebook-icon"
+              ><i class="fab fa-facebook-f"></i> Facebook</a
+            >
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        <p>&copy; Food VN. Món Ăn Đặc Sản Tỉnh Thành Việt Nam</p>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

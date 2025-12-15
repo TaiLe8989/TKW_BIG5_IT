@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới Thiệu Ẩm Thực Tỉnh Thành Việt Nam</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script>
+      // Function to check if the user is logged in
+      function checkIfLoggedIn() {
+        const loggedInUser = localStorage.getItem("loggedInUser");
+
+        // If user is logged in, return the user object
+        return JSON.parse(loggedInUser);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app-container">
+      <header>
+        <button id="hamburger-btn" class="menu-icon" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <h1 class="logo">Ẩm Thực Đặc Sản Tỉnh Thành Việt Nam</h1>
+        <span id="welcomeMessage">
+            <a href='login.html' id='signin-btn' class='sign-in-btn'>Đăng Nhập</a>
+        </span>
+        <script>
+              // Function to display the username on the welcome page
+              function displayUsername() {
+                const user = checkIfLoggedIn();
+                const welcomeMessage =
+                  document.getElementById("welcomeMessage");
+
+                if (user) {
+                  welcomeMessage.innerText = "Welcome, " + user.username + "!";
+                }
+              }
+
+              // Call the displayUsername function on page load
+              displayUsername();
+            </script>
+
+        
+    
+        <!-- Menu dropdown -->
+        <nav id="dropdown-menu" class="dropdown-menu">
+          <a href="login.html">Đăng nhập</a>
+          <a href="about.html" id="about.html">Về chúng tôi</a>
+          <a href="home.html" id="home-link">Trang Chủ</a>
+        </nav>
+      </header>
+      <div id="main-structure">
+        <main id="main-content">
+          <section id="detail-page" class="view active-view">
+            <h2 class="detail-title">
+              GIỚI THIỆU ẨM THỰC TỈNH <span id="city-name">HẢI DƯƠNG</span>
+            </h2>
+
+            <p class="city-overview"></p>
+
+            <hr />
+            <h3>
+            Hải Dương nổi tiếng là một trong những tỉnh nằm trong vùng Đồng bằng sông Hồng, sở hữu nhiều cảnh vật kỳ thú được thiên nhiên ban tặng, và mang trong mình dáng vẻ bình yên của một miền quê dân dã. Bên cạnh đó, những món đặc sản Hải Dương cũng khiến nhiều du khách yêu thích lựa chọn khi đến đây.
+Nằm trong vùng đồng bằng sông Hồng, Hải Dương được thiên nhiên ưu đãi, sông ngòi bồi đắp quanh năm nên nguồn nguyên liệu tự nhiên lúc nào cũng tươi ngon hảo hạng. Nhờ đó, những món ăn dù đơn giản, nhưng lại rất cuốn hút đã ra đời.
+Hãy khám phá và tìm hiểu về những món ăn đặc sản Hải Dương thu hút qua bài viết dưới nhé!
+            </h3>
+                      <div class="food-module">
+              <h3>1. Bánh đậu xanh</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://ik.imagekit.io/tvlk/blog/2022/09/dac-san-hai-duong-2.jpg?tr=q-70,c-at_max,w-1000,h-600"
+                  alt="Ảnh Bánh Đậu Xanh (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                 Đến với Hải Dương du khách chắc chắn không thể bỏ qua bánh đậu xanh mềm và ngọt lịm. Một thức bánh ăn vặt thưởng thức với trà cực cuốn hút.
+Bánh được làm ra từ những hạt đậu xanh tươi xay nhuyễn cùng đường, dầu thực vật. Sau đó sẽ được cắt thành những miếng vuông, kích thước nhỏ gói trong giấy bạc hoặc giấy thấm dầu chuyên dụng để hạn chế dầu mỡ gây ngán khi ăn.
+Ngay từ khi bóc lớp giấy bọc bên ngoài bạn sẽ ngửi rõ mùi thơm đặc trưng của đậu xanh, khi thưởng thức sẽ cảm nhận rõ vị ngọt và béo bùi nhưng không gây chán. Không gì bắt khi thưởng thức bánh đậu xanh và nhâm nhi một tách trà chiều.
+                </p></h3>
+
+                <h4>Hiện nay bánh được bán với giá khoảng 30.000 - 40.000 VND/ hộp 200gr, du khách có thể tìm mua tại nhiều cơ sở khác nhau như:</h4>
+                <ul>
+                  <li>Bánh đậu xanh Nguyên Hương</li>
+                  <li>Bánh đậu xanh Rồng Vàng Minh Ngọc</li>
+                  <li>Bánh đậu xanh Hòa An</li>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="food-module">
+              <h3>2. Bánh gai Ninh Giang</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://ik.imagekit.io/tvlk/blog/2022/09/dac-san-hai-duong-3.jpg?tr=q-70,c-at_max,w-1000,h-600"
+                  alt="Ảnh Bánh Gai Ninh Giang(Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                 Bánh gai Hải Dương là loại bánh quen thuộc tại khu vực miền Bắc, với phần vỏ bánh được tạo màu từ lá gai, có màu đen và hương thơm đặc trưng, phần bột nếp cái hoa vàng Kinh Môn nổi tiếng ở Hải Dương kết hợp với đậu xanh bên trong. Bánh được gói trong lá gai khá vuông vức.
+Khi ăn bạn sẽ cảm thấy mùi thơm ngọt và dẻo dẻo của bánh, kết hợp cùng mùi thơm từ mè rang, mang lại hương vị không lẫn vào đâu được trong lần đầu thưởng thức. Đặc biệt bánh gai Ninh Giang - đặc sản Hải Dương còn có thêm dừa, đậu phộng, mỡ heo cắt nhỏ,... mang lại hương vị hấp dẫn và lạ miệng hơn khi thưởng thức. Món đặc sản này cũng có giá bán khá rẻ, dao đồng từ 2.000 – 10.000 VND/cái (tùy loại).
+                </p></h3>
+                <h4>Địa chỉ tham khảo:</h4>
+                <ul>
+                  <li>Bánh gai Ninh Giang: Thôn Hữu Chung, Xã, Tân Phong, Ninh Giang, Hải Dương</li>
+                </ul>
+              </div>
+            </div>
+
+
+             <div class="food-module">
+              <h3>3. Bánh cuốn</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://mia.vn/media/uploads/blog-du-lich/banh-cuon-hai-duong-1691968235.jpg"
+                  alt="Ảnh Món Bánh Cuốn (Ảnh sưu tầm)
+                  class="food-image />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                 Mặc dù là món ăn quen thuộc, nhưng bánh cuốn ở mỗi nơi sẽ có cách làm và mang hương vị rất riêng biệt. Và không ngoại lệ, bánh cuốn Hải Dương cũng mang lại mùi vị khác biệt và cuốn hút cho du khách khi nếm thử.
+Bánh được làm từ loại gạo hảo hạng nhất được xay mịn, vì vậy mà bánh có bề ngoài mướt, mỏng, cùng nhân thịt xay xào nấm, rắc một chút hành phi và ăn kèm cùng chút nước mắm sẽ mang lại món ăn không thể nào quên.
+                </p></h3>
+                <h4>Một phần ăn bánh cuốn tại đây khoảng 20.000 - 25.000 VND, du khách có thể tìm mua tại nhiều nơi khác nhau như:</h4>
+                <ul>
+                  <li>Bánh cuốn Bà Thấu: số 1 Lê Lợi, Hải Dương.</li>
+                  <li>Quán bánh cuốn chả mực Hạ Long: số 30 Phạm Hồng Thái, Hải Dương.</li>
+                  <li>Quán bánh cuốn Bà Nga: số 91 Phạm Hồng Thái, Hải Dương.</li>
+                </ul>
+              </div>
+            </div>
+
+
+             <div class="food-module">
+              <h3>4. Bánh lòng Kinh Môn</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://ik.imagekit.io/tvlk/blog/2022/09/dac-san-hai-duong-4.jpeg?tr=q-70,c-at_max,w-1000,h-600"
+                  alt="Ảnh Bánh Lòng Kinh Môn (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                 Nếu đến Hải Dương mà không thử qua bánh lòng Kinh môn sẽ là sai sót rất lớn đấy bạn nhé. Bánh được biết đến là loại bánh truyền thống của người dân Hải Dương, thường được dùng trong việc thờ cúng tổ tiên, mang hương vị đặc trưng riêng.
+Món bánh này được làm từ những nguyên liệu gần gũi với đời sống như: gừng, đậu phộng, bông gạo nếp cái, đường. Khi ăn bạn sẽ thấy vị cay nhè nhẹ của gừng, vị bùi bùi thơm thơm của đậu phộng và bánh dẻo mềm dễ ăn.
+                </p></h3>
+                <h4>Bạn có thể tìm mua món đặc sản Hải Dương này tại các quán trong huyện Kinh Môn, Hải Dương với mức giá khoảng 50.000 VND. Đây cũng là thức quà du lịch mà bạn có thể tham khảo mua cho bạn bè, gia đình mình nhé!</h4>
+              </div>
+            </div>
+
+
+            <div class="food-module">
+              <h3>5. Bánh Đúc Đậu</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://ik.imagekit.io/tvlk/blog/2022/09/dac-san-hai-duong-5.jpg?tr=q-70,c-at_max,w-1000,h-600"
+                  alt="Ảnh Bánh Đúc Đậu (Ảnh sưu tầm)"
+                  class="food-image" />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Đây là món ăn khá nổi tại thành phố Tuy An, HẢi Dương. Bánh được chế biến từ bột gạo, cùng đậu phộng. Khi ăn chỉ cần chấm cùng chút mắm tôm hoặc tương bần, kèm thêm chút rau sống sẽ khiến bạn khó lòng mà quên được hương vị món ăn mang lại.
+                </p></h3>
+                <h4>Mức giá một phần ăn khoảng 20.000 - 30.000 VND, bạn có thể tìm thấy nhiều hàng quán tại Tuy An bán loại bánh độc đáo, hấp dẫn này.</h4>
+                <ul>
+                  <li>Bánh Đúc Đậu: 27A Tuy An, P. Lê Thanh nghị, Thành phố Hải Dương, Hải Dương</li>
+                </ul>
+              </div>
+            </div>
+
+
+              <div class="food-module">
+              <h3>6. Bánh đa</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/11/18/1398759/15-dac-san-hai-duong-ngon-nuc-tieng-gan-xa-nhac-den-la-them-202111181409262482.jpg"
+                  alt="Ảnh Món Bún Thang (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Đối với khu vực miền Bắc thì bánh đa là loại bánh khá phổ biến, mỗi nơi tỉ lệ pha chế và làm ra bánh đa sẽ khác nhau. Đối với bánh đa tại Hải Dương thì bánh có phần mềm hơn, khi ăn có chút dai dai, không bị vỡ nát khi bị ngấm nước.
+Bánh đa có thể ăn không, ăn kèm cùng đậu phộng hoặc bỏ vào ăn cùng các loại bún, hoặc có thể chế biến các món từ thịt gà, cá, lợn. Giúp món ăn thêm hấp dẫn và mang hương vị đặc trưng hơn.
+                </p></h3>
+                <h4>Du khách có thể tìm mua bánh đa ở nhiều nơi khi ghé thăm Hải Dương với mức giá chỉ từ 30.000 VND/kg.</h4>
+              </div>
+            </div>
+ 
+
+            <div class="food-module">
+              <h3>7. Bún Cá Rô Đồng</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://kyluc.vn/Userfiles/Upload/images/BUN-ca-ro-dong_650.png"
+                  alt="Ảnh Món Bún Cá Rô Đồng (Ảnh sưu tầm)"
+                  class="food-image" />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Trong số những món đặc sản Hải Dương nổi tiếng hiện nay, thì bún cá rô đồng là cái tên không thể bỏ qua. Món ăn được chế biến từ thịt cá rô đánh bắt tươi ngon, kết hợp cùng cách nấu riêng biệt mang lại món ăn có hương vị đặc trưng, hấp dẫn.
+Chỉ khoảng 20.000 - 50.000 VND/tô, bạn sẽ được thưởng thức món đặc sản hấp dẫn này cùng nước lèo vừa miệng, thơm mùi cá, phần thịt cá mềm mềm, kết hợp cùng một chút rau sống sẽ tạo nên hương vị cuốn hút không thể cưỡng lại.
+                </p></h3>
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Bún cá rô đồng: W8RM+448, Lê Lợi, P, Thành phố Hải Dương, Hải Dương</li>
+                  <li>Bún cá rô: 28 Ngõ 116 Nguyễn Lương Bằng, P. Phạm Ngũ Lão, Thành Phố Hải Dương, Hải Dương.</li>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="food-module">
+              <h3>8. Rươi Tứ Kỳ</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://i.ex-cdn.com/vovgiaothong.vn/files/f1/Sites/1/media/sonnt/images/cha-ruoi-3-600x398.jpg"
+                  alt="Ảnh Món Rươi Tứ Kỳ (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Với thế mạnh nằm trong vùng đồng bằng sông Hồng, với hệ thống sông ngòi khá dày đặc. Nên vào khoảng thời gian tháng 8 âm lịch hàng năm tại những con sông lớn xuất hiện rất nhiều Rươi.
+Người dân tại đây đã tận dụng cơ hội đánh bắt rươi để tạo nên món ăn thơm ngon, hấp dẫn đặc trưng không thể bỏ qua. Trong thịt rươi có nhiều chất dinh dưỡng và tốt cho sức khỏe, bạn có thể tìm thấy nhiều món ăn chế biến từ Rươi, trong đó phổ biến chính là mực chả rươi thơm ngon, dai dai, với mùi hương đặc trưng rất riêng.
+                </p></h3>
+                <h4>Về giá bán, hiện nay, Rươi Tứ Kỳ có giá khoảng tầm 500.000 VND/kg (có thể thay đổi tùy theo thời điểm).
+Địa Chỉ Tham Khảo: </h4>
+                <ul>
+                  <li>Rươi tươi dì Sáu: An Thanh - Tứ Kỳ - Hải Dương</li>
+                  <li>Nhà hàng Tuấn Rươi: 347 Trường Chinh, phường Tân Bình, thành phố Hải Dương, Hải Dương.</li>
+                </ul>
+              </div>
+            </div>
+
+            
+            <div class="food-module">
+              <h3>9. Bánh Dày Gia Lộc</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://ik.imagekit.io/tvlk/blog/2022/09/dac-san-hai-duong-8-1024x666.jpeg?tr=q-70,c-at_max,w-1000,h-600"
+                  alt="Ảnh Bánh Dày Gia Lộc (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Nếu thắc mắc Hải Dương có gì đặc sản? thì bánh dày Gia Lộc sẽ là lựa chọn không thể bỏ qua cho du khách khi đến đây. Bánh có vẻ ngoài trắng mịn và khá “ú”, phần bánh dẻo thơm mùi nếp, cùng với mùi của lá chuối xanh gói bên ngoài tạo nên hương vị rất riêng khi ăn cùng chả, xôi nén,...
+                </p></h3>
+                <h4>Đây là món bánh ăn vặt khá hấp dẫn, với mức giá khoảng 10.000 VND/ cặp bạn có thể tìm mua tại nhiều cửa hàng, quán bánh tại Gia Lộc, Hải Dương.</h4>
+              </div>
+            </div>
+
+
+ <div class="food-module">
+              <h3>10. Vải thiều Thanh Hà</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://ik.imagekit.io/tvlk/blog/2022/09/dac-san-hai-duong-9-1024x640.jpg?tr=q-70,c-at_max,w-1000,h-600"
+                  alt="Ảnh Vải Thiều Thanh Hà (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                 Vải thiều Thanh Hà được đánh giá cao nhất trong các loại vải thiều vì mang hương thơm đặc trưng, vị ngọt dịu và rất mát khi ăn. Từng trái có kích thước vừa, nhưng thịt dày mọng nước, hạt nhỏ. Khi ăn vào chắc chắn bạn sẽ khó mà ngừng lại bởi hương vị tuyệt vời mà nó mang lại cho vị giác. Hiện nay, đặc sản vải thiều Thanh Hà đã được cung ứng rộng khắp đến nhiều nơi ở nước ta nhưng sẽ là một trải nghiệm đáng nhớ nếu được trực tiếp thưởng thức đặc sản này ngay tại “quê nhà”.
+                </p></h3>
+                <h4>Để tìm mua loại vải thiều này bạn có thể đến chợ xã ở Thanh Khê, Thanh Hà, hoặc nhiều khu chợ khác trong địa bàn tỉnh. Vào đầu mùa, giá bán sẽ cao hơn, dao động khoảng 50.000 - 60.000 VND/kg vào trung bình khoảng 30.000 - 35.000 VND/kg vào mùa chín rộ.</h4>
+              </div>
+            </div>
+
+          </section>
+        </main>
+
+      
+        <aside id="right-sidebar">
+          <h3>Ẩm thực theo các tỉnh thành</h3>
+         <div class="search-box">
+           <form autocomplete="off" id="search_form">
+              <div class="autocomplete">
+                <input
+                  id="myInput"
+                  type="text"
+                  name="myCountry"
+                  placeholder="Tìm kiếm"
+                />
+              </div>
+              <input type="submit" />
+              <span></span>
+            </form>
+          </div>
+
+          <div class="social-links">
+            <a
+              href="https://zalo.me/0589368989"
+              target="_blank"
+              class="social-icon zalo-icon"
+              ><i class="fas fa-comment-dots"></i> Zalo</a
+            >
+            <a
+              href="https://www.facebook.com/Lmt8989?locale=vi_VN"
+              target="_blank"
+              class="social-icon facebook-icon"
+              ><i class="fab fa-facebook-f"></i> Facebook</a
+            >
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        <p>&copy; Food VN. Món Ăn Đặc Sản Tỉnh Thành Việt Nam</p>
+      </footer>
+    </div>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="script.js"></script>
+  </body>
+</html>

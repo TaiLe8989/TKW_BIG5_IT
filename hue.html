@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới Thiệu Ẩm Thực Tỉnh Thành Việt Nam</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script>
+      // Function to check if the user is logged in
+      function checkIfLoggedIn() {
+        const loggedInUser = localStorage.getItem("loggedInUser");
+
+        // If user is logged in, return the user object
+        return JSON.parse(loggedInUser);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app-container">
+      <header>
+        <button id="hamburger-btn" class="menu-icon" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <h1 class="logo">Ẩm Thực Đặc Sản Tỉnh Thành Việt Nam</h1>
+        <span id="welcomeMessage">
+            <a href='login.html' id='signin-btn' class='sign-in-btn'>Đăng Nhập</a>
+        </span>
+        <script>
+              // Function to display the username on the welcome page
+              function displayUsername() {
+                const user = checkIfLoggedIn();
+                const welcomeMessage =
+                  document.getElementById("welcomeMessage");
+
+                if (user) {
+                  welcomeMessage.innerText = "Welcome, " + user.username + "!";
+                }
+              }
+
+              // Call the displayUsername function on page load
+              displayUsername();
+            </script>
+
+        
+    
+        <!-- Menu dropdown -->
+        <nav id="dropdown-menu" class="dropdown-menu">
+          <a href="login.html">Đăng nhập</a>
+          <a href="about.html" id="about.html">Về chúng tôi</a>
+          <a href="home.html" id="home-link">Trang Chủ</a>
+        </nav>
+      </header>
+
+      <div id="main-structure">
+        <main id="main-content">
+          <section id="detail-page" class="view active-view">
+            <h2 class="detail-title">
+              GIỚI THIỆU ẨM THỰC CỐ ĐÔ <span id="city-name">HUẾ</span>
+            </h2>
+            
+            <p class="city-overview"></p>
+
+            <hr />
+            <h3>
+             Đất Huế thơ mộng không chỉ với sông Hương, núi Ngự, với lăng tẩm đền đài mà còn độc đáo bởi những con người tài 
+            hoa, khéo léo đã tạo ra một nét ẩm thực đặc trưng mang đậm màu sắc của vùng đất xinh đẹp này. Mà khi nhắc đến hẳn 
+            ai trong mỗi du khách cũng mong được hưởng thức các món ăn xứ Huế không chỉ một lần.
+            </h3>
+            <div class="food-module">
+              <h3>1.Cơm hến</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://booking.muongthanh.com/upload_images/images/H%60/com-hen-ngon-o-hue.jpg"
+                    alt="Ảnh Cơm hến (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Cơm hến là món ăn dân dã nhưng đầy tinh tế của người Huế. Món ăn kết hợp giữa cơm trắng nguội, hến xào thơm lừng, 
+                  rau sống tươi mát và nước mắm chua ngọt. Hương vị đậm đà, cay nồng của cơm hến chắc chắn sẽ làm say lòng bất cứ 
+                  ai từng thưởng thức.
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Quán cơm hến Hoa Đông: 64 Kiệt 7 Ưng Bình, Vỹ Dạ, TP. Huế </li>
+                  <li>Quán cơm hến Hương Xưa: 30/7 Ưng Bình, Vỹ Dạ, Huế, Thành phố Huế</li>
+                  <li>Quán cơm hến Tím Huế: 26 Kiệt 7 Ưng Bình, Cồn Hến, Huế, Thành phố Huế</li>
+                </ul>
+              </div>
+            </div>
+
+            
+            <div class="food-module">
+              <h3>2.Bún bò Huế</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://booking.muongthanh.com/upload_images/images/H%60/bun-bo-hue.jpg"
+                    alt="Ảnh Bún bò Huế (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Nhắc đến Huế, không thể không nhắc đến bún bò Huế - món ăn trứ danh làm nên tên tuổi của đặc sản Huế. Nước dùng đậm 
+                  đà, sợi bún dai mềm, thịt bò thái mỏng cùng chả cua thơm ngon tạo nên hương vị khó quên đã làm say lòng biết bao 
+                  thực khách.
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Quán bún bò Huế bà Tuyết: 47 Nguyễn Công Trứ, Phú Hội, TP. Huế</li>
+                  <li>Quán bún bò Huế Sen: 69 Võ Thị Sáu, Phú Hội, Huế, Thành phố Huế</li>
+                  <li>Quán bún bò Huế Cố Đô: 268D Điện Biên Phủ, Trường An, Huế, Thành phố Huế</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="food-module">
+              <h3>3.Mè xửng</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://booking.muongthanh.com/upload_images/images/me-xung-hue.jpg"
+                    alt="Ảnh Mè xửng (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Mè xửng là món kẹo truyền thống của Huế, được làm từ mè (vừng) và đường mạch nha. Vị ngọt thanh, dẻo dai của mè xửng 
+                  khiến nó trở thành món quà ý nghĩa cho du khách khi ghé thăm cố đô.
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Quán mè xửng Thiên Hương: 20 Chi Lăng, Phú Hiệp, TP. Huế</li>
+                  <li>Quán Đặc sản Huế làm quà  : 17 ngõ 126 Nguyễn Trãi, Thuận Hoà, Huế, Thành phố Huế</li>
+                  <li>Quán Đặc sản Cố Đô - Lý Hùng: 62B Nguyễn Phúc Nguyên, Hương Long, Huế, Thành phố Huế</li>
+                </ul>
+              </div>
+            </div>
+
+             <div class="food-module">
+              <h3>4.Bánh bột lọc</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://booking.muongthanh.com/upload_images/images/H%60/banh-bot-loc.jpg"
+                    alt="Ảnh Bánh bột lọc (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Bánh bột lọc Huế nổi tiếng với lớp vỏ trong suốt, dai mềm bao bọc nhân tôm thịt đậm đà. Khi ăn kèm cới nước mắm chua ngọt, 
+                  món bánh này trở nên hấp dẫn hơn bao giờ hết.
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Quán bà Đỏ: 8 Nguyễn Bỉnh Khiêm, Phú Cát, TP. Huế</li>
+                  <li>Quán bánh O Lé:  Kiệt 104, 17/9 Kim Long, Huế, Thành phố Huế</li>
+                  <li>Quán bánh lọc Huế Bà Vân: 106B Lương Ngọc Quyến, Thuận Lộc, Huế, Thành phố Huế</li>
+                </ul>
+              </div>
+            </div>
+
+
+   
+
+          </section>
+        </main>
+
+        <aside id="right-sidebar">
+          <h3>Ẩm thực theo các tỉnh thành</h3>
+         <div class="search-box">
+           <form autocomplete="off" id="search_form">
+              <div class="autocomplete">
+                <input
+                  id="myInput"
+                  type="text"
+                  name="myCountry"
+                  placeholder="Tìm kiếm"
+                />
+              </div>
+              <input type="submit" />
+              <span></span>
+            </form>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://zalo.me/0589368989"
+              target="_blank"
+              class="social-icon zalo-icon"
+              ><i class="fas fa-comment-dots"></i> Zalo</a
+            >
+            <a
+              href="https://www.facebook.com/Lmt8989?locale=vi_VN"
+              target="_blank"
+              class="social-icon facebook-icon"
+              ><i class="fab fa-facebook-f"></i> Facebook</a
+            >
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        <p>&copy; Food VN. Món Ăn Đặc Sản Tỉnh Thành Việt Nam</p>
+      </footer>
+    </div>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="script.js"></script>
+  </body>
+</html>
