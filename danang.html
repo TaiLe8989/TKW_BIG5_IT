@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới Thiệu Ẩm Thực Tỉnh Thành Việt Nam</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script>
+      // Function to check if the user is logged in
+      function checkIfLoggedIn() {
+        const loggedInUser = localStorage.getItem("loggedInUser");
+
+        // If user is logged in, return the user object
+        return JSON.parse(loggedInUser);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app-container">
+      <header>
+        <button id="hamburger-btn" class="menu-icon" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <h1 class="logo">Ẩm Thực Đặc Sản Tỉnh Thành Việt Nam</h1>
+        <span id="welcomeMessage">
+            <a href='login.html' id='signin-btn' class='sign-in-btn'>Đăng Nhập</a>
+        </span>
+        <script>
+              // Function to display the username on the welcome page
+              function displayUsername() {
+                const user = checkIfLoggedIn();
+                const welcomeMessage =
+                  document.getElementById("welcomeMessage");
+
+                if (user) {
+                  welcomeMessage.innerText = "Welcome, " + user.username + "!";
+                }
+              }
+
+              // Call the displayUsername function on page load
+              displayUsername();
+            </script>
+
+        
+    
+        <!-- Menu dropdown -->
+        <nav id="dropdown-menu" class="dropdown-menu">
+          <a href="login.html">Đăng nhập</a>
+          <a href="about.html" id="about.html">Về chúng tôi</a>
+          <a href="index.html" id="home-link">Trang Chủ</a>
+        </nav>
+      </header>
+
+      <div id="main-structure">
+        <main id="main-content">
+          <section id="detail-page" class="view active-view">
+            <h2 class="detail-title">
+              GIỚI THIỆU ẨM THỰC THÀNH PHỐ <span id="city-name">ĐÀ NẴNG</span>
+            </h2>
+
+            <p class="city-overview"></p>
+
+            <hr />
+            <h3>
+            Nền ẩm thực Đà Nẵng mang trong mình nét đặc trung của mảnh đất miền Trung. Không chỉ nổi tiếng với cảnh quan 
+            thiên nhiên tươi đẹp, những bờ cát trắng trải dài mà văn hóa ẩm thực Đà Nẵng còn là một trong những lý do khiến
+            du khách thập phương siêu lòng. Nếu đã đặt chân đến đây, đừng ngại ngần khám phá hết những điểm đặc sắc, ngon khó
+            cưỡng của nền ẩm thực Đà Nẵng.
+            </h3>
+            <div class="food-module">
+              <h3>1.Mì Quảng</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://cdn3.ivivu.com/2023/10/%E1%BA%A9m-th%E1%BB%B1c-%C4%91%C3%A0-n%E1%BA%B5ng-ivivu.jpg"
+                    alt="Ảnh Mì Quảng (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Nhắc đến ẩm thực Đà Nẵng, không thể bỏ qua món mì Quảng ngon trứ danh. Đây là món ăn dân dã mà bất cứ ai cũng đều 
+                  thích sau lần thử đầu tiên. Một tô mì Quảng vàng thơm với sợi mì mềm, dai được làm từ bột gạo, bên cạnh đó không 
+                  thiếu chính là hương vị ngọt thanh, thơm nhè nhẹ của nước lèo được ninh từ xương trong nhiều giờ. Một tô mì Quảng 
+                  đầy đủ bao gồm mì, thịt heo hoặc thịt gà, tôm, trứng,... Ăn mì Quảng kèm với rau sống, bánh đa, chanh, ớt,...
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Quán mì Quảng Bà Mua: 95A Nguyễn Tri Phương, Thạc Gián, Thanh Khê, Đà Nẵng </li>
+                  <li>Quán mì Quảng Ếch - Bếp Trang: 441 Ông Ích Khiêm, Phước Ninh, Hải Châu, Đà Nẵng</li>
+                  <li>Quán mì Quảng Bà Vị: 166 Lê Đình Dương, Hải Châu, Đà Nẵng</li>
+                </ul>
+              </div>
+            </div>
+
+            
+            <div class="food-module">
+              <h3>2.Gỏi cá Nam Ô</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://cdn3.ivivu.com/2022/08/goi-ca-nam-o-da-nang-ivivu-5.jpg"
+                    alt="Ảnh Gỏi cá Nam Ô (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Gỏi cá Nam Ô là một trong những món ăn đặc sản mà bạn phải thử khi đến Đà Nẵng. Món ăn này có nguồn gốc từ làng chài 
+                  Nam Ô, dưới chân đèo Hải Vân thuộc quận Liên Chiểu, thành phố Đà Nẵng. Gỏi cá Nam Ô có hai loại: gỏi ướt và gỏi khô. 
+                  Gỏi khô thường dùng kèm bánh tráng cuốn tròn, bên trong là gỏi cá, các loại rau giá tươi, chấm với nước chấm sền sệt, 
+                  chua ngọt và bùi bùi. Gỏi cá ướt với thịt cá tươi, ngọt thấm gia vị trong nước dùng cay đậm đà, được pha chế từ nước 
+                  mắm thơm ngon của làng chài Nam Ô.
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Quán Gỏi cá Nam Ô Bà Hiền: 1315 Nguyễn Tất Thành, Thanh Khê, Đà Nẵng</li>
+                  <li>Quán Gỏi cá Nam Ô Thanh Hương: 1029 Nguyễn Lương Bằng, Liên Chiểu, Đà Nẵng</li>
+                  <li>Quán Cô Hồng: 103 Nguyễn Văn Thoại, An Hải Đông, Sơn Trà, Đà Nẵng</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="food-module">
+              <h3>3.Bánh nậm Đà Nẵng</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://mia.vn/media/uploads/blog-du-lich/thien-duong-am-thuc-da-nang-cuon-hut-du-khach-bon-phuong-04-1636085841.jpeg"
+                    alt="Ảnh Bánh nậm Đà Nẵng (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Bánh nậm là thứ bánh dân dã, mộc mạc từ nguyên liệu đến hương vị lại có sức quyến rũ lớn đối với cả dân bản địa và du 
+                    khách tới Đà Nẵng. Nhân bánh làm từ tôm, cá bào ướp gia vị và sấy khô trên than hồng để loại mùi tanh. Hoặc cũng có 
+                    nhân làm từ thịt nạc, nấm mèo,.. tạo nên một loại hỗn hợp đặc quánh có màu cam tươi rất đẹp mắt.
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Quán Bánh nậm Bà Bé: 100 Hoàng Văn Thụ, Phước Ninh, Hải Châu, Đà Nẵng</li>
+                  <li>Quán Bánh nậm Huế thương - Bà Vân: 59 Thanh Tịnh, phường Hòa Khánh, Đà Nẵng</li>
+                  <li>Quán Cô Xí: 186 Tô Hiệu, phường Hòa Khánh, Đà Nẵng</li>
+                </ul>
+              </div>
+            </div>
+
+             <div class="food-module">
+              <h3>4.Chè xoa xoa hạt lựu Đà Nẵng</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://mia.vn/media/uploads/blog-du-lich/thien-duong-am-thuc-da-nang-cuon-hut-du-khach-bon-phuong-07-1636085842.jpeg"
+                    alt="Ảnh Chè xoa xoa hạt lựu Đà Nẵng (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Chè xoa xoa hạt lựu Đà Nẵng có thể xem là một trong những món ngon của ẩm thực Đà Nẵng. Với phong cách chế biến lẫn 
+                  hương vị rất đặc trung, chè xoa xoa hạt lựu khác biệt với món chè của tất cả các vùng miền khác.
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Quán chè xoa xoa Đà Nẵng Trần Bình Trọng: Số 46 đường Trần Bình Trọng, TP. Đà Nẵng</li>
+                  <li>Quán chè xoa xoa Đà Nẵng Phan Thanh: 111 đường Phan Thanh, TP. Đà Nẵng</li>
+                  <li>Quán chè xoa xoa hạt lựu cô Châm: 281 Nguyễn Chí Thanh, phường Hải Châu, Đà Nẵng </li>
+                </ul>
+              </div>
+            </div>
+
+
+          </section>
+        </main>
+
+        <aside id="right-sidebar">
+          <h3>Ẩm thực theo các tỉnh thành</h3>
+         <div class="search-box">
+           <form autocomplete="off" id="search_form">
+              <div class="autocomplete">
+                <input
+                  id="myInput"
+                  type="text"
+                  name="myCountry"
+                  placeholder="Tìm kiếm"
+                />
+              </div>
+              <input type="submit" />
+              <span></span>
+            </form>
+          </div>
+
+          <div class="social-links">
+            <a
+              href="https://zalo.me/0589368989"
+              target="_blank"
+              class="social-icon zalo-icon"
+              ><i class="fas fa-comment-dots"></i> Zalo</a
+            >
+            <a
+              href="https://www.facebook.com/Lmt8989?locale=vi_VN"
+              target="_blank"
+              class="social-icon facebook-icon"
+              ><i class="fab fa-facebook-f"></i> Facebook</a
+            >
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        <p>&copy; Food VN. Món Ăn Đặc Sản Tỉnh Thành Việt Nam</p>
+      </footer>
+    </div>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="script.js"></script>
+  </body>
+</html>

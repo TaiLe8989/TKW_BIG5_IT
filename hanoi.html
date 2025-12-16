@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới Thiệu Ẩm Thực Tỉnh Thành Việt Nam</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script>
+      // Function to check if the user is logged in
+      function checkIfLoggedIn() {
+        const loggedInUser = localStorage.getItem("loggedInUser");
+
+        // If user is logged in, return the user object
+        return JSON.parse(loggedInUser);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app-container">
+      <header>
+        <button id="hamburger-btn" class="menu-icon" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <h1 class="logo">Ẩm Thực Đặc Sản Tỉnh Thành Việt Nam</h1>
+        <span id="welcomeMessage">
+            <a href='login.html' id='signin-btn' class='sign-in-btn'>Đăng Nhập</a>
+        </span>
+        <script>
+              // Function to display the username on the welcome page
+              function displayUsername() {
+                const user = checkIfLoggedIn();
+                const welcomeMessage =
+                  document.getElementById("welcomeMessage");
+
+                if (user) {
+                  welcomeMessage.innerText = "Welcome, " + user.username + "!";
+                }
+              }
+
+              // Call the displayUsername function on page load
+              displayUsername();
+            </script>
+
+        
+    
+        <!-- Menu dropdown -->
+        <nav id="dropdown-menu" class="dropdown-menu">
+          <a href="login.html">Đăng nhập</a>
+          <a href="about.html" id="about.html">Về chúng tôi</a>
+          <a href="index.html" id="home-link">Trang Chủ</a>
+        </nav>
+      </header>
+
+      <div id="main-structure">
+        <main id="main-content">
+          <section id="detail-page" class="view active-view">
+            <h2 class="detail-title">
+              GIỚI THIỆU ẨM THỰC THỦ ĐÔ <span id="city-name">HÀ NỘI</span>
+            </h2>
+
+            <p class="city-overview"></p>
+
+            <hr />
+            <h3>
+            Hà Nội có gì ăn? Bỏ túi các món ngon Hà Nội nổi tiếng, tạo nên sức
+            quyến rũ khó cưỡng cho thủ đô nhé! Ẩm thực Hà Nội không chỉ là
+            chuyện ăn uống – đó là ký ức, là văn hoá, là tình yêu được truyền
+            qua nhiều thế hệ. Nếu bạn vẫn đang băn khoăn “Ăn gì ở Hà Nội?”, thì
+            câu trả lời chắc chắn không chỉ có một, mà là cả một bản đồ ẩm thực
+            phong phú, đủ sức khiến bất kỳ tâm hồn ăn uống nào cũng phải rung
+            động. Từ những món ăn dân dã như bún ốc, bánh cuốn, đến những hương
+            vị “quốc dân” như phở, bún chả mỗi món ăn đều mang trong mình một
+            câu chuyện, một mảnh hồn Hà Nội rất riêng. Hãy dành trọn một (hoặc
+            vài) ngày để khám phá trọn vẹn những món ngon Hà Nội nổi tiếng được
+            gợi ý dưới đây nhé.
+            </h3>
+            <div class="food-module">
+              <h3>1.Phở Hà Nội - Đặc Sản Hà Nội "Vạn Người Mê"</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1714043751/xcmv6ine1oq4md0zdmnx.webp"
+                  alt="Ảnh Món Phở (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Không phải ngẫu nhiên mà phở Hà Nội được xem là biểu tượng ẩm
+                  thực của thủ đô. Khác với phở miền Nam, bánh phở ở Hà Nội
+                  thường to bản, dẹt và mềm dai hơn. Nước dùng trong veo, đậm đà
+                  vị xương ninh, điểm thêm chút hành hoa và rau thơm là đủ để
+                  làm ấm lòng mỗi sáng sớm. Nhiều nơi còn ăn kèm với quẩy giòn
+                  rụm – một thói quen khó bỏ của người Hà Nội chính gốc. Dù là
+                  phở bò, phở gà hay phở ngan, mỗi tô đều mang một dư vị rất
+                  riêng, rất Bắc.
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Phở Gia Truyền: 49 Bát Đàn, Q.Hoàn Kiếm</li>
+                  <li>Phở Thìn: 13 Lò Đúc, Q.Hai Bà Trưng</li>
+                  <li>Phở Vui (chuyên bò): 25 Hàng Giấy, Q.Hoàn Kiếm.</li>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="food-module">
+              <h3>2. Đi Hà Nội, Đừng Bỏ Qua Phở Cuốn</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1611204023/blog/mfx04dfqytdfoukqoixv.webp"
+                  alt="Ảnh Món Phở Cuốn (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Không cầu kỳ mà lại dễ gây nghiện – đó chính là phở cuốn Hà Nội. Những lát bánh phở mềm mại cuộn thịt bò xào, rau sống, chút giá đỗ và dưa góp, chấm cùng nước mắm pha tỏi ớt chua ngọt – vậy là đủ cho một buổi xế no bụng mà vẫn nhẹ nhàng, thanh mát. Món ăn này cực kỳ lý tưởng để giải ngán giữa ngày hè oi ả.
+                </p></h3>
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Phở cuốn Hương Mai: 25 Ngũ Xá, Q.Ba Đình</li>
+                  <li>Phở cuốn Hưng Bền: 35 Nguyễn Khắc Hiếu, Q.Ba Đình</li>
+                  <li>Phở cuốn Ngũ Xá: 233A Tô Hiệu, Q.Cầu Giấy</li>
+                </ul>
+              </div>
+            </div>
+
+
+             <div class="food-module">
+              <h3>3. Bún Chả Hà Nội - Đặc Sản Hà Nội Trứ Danh Quốc Tế</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1714043737/wsxubuwbqb1je8w1anan.webp"
+                  alt="Ảnh Món Bún Chả (Ảnh sưu tầm)
+                  class="food-image />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Nếu chỉ được chọn một món để thử khi đến Hà Nội, bún chả chắc chắn là cái tên không thể bỏ qua. Đừng nhầm với bún thịt nướng miền Nam – bún chả Hà Nội có nước chấm đặc trưng được pha chế từ nước mắm, giấm, tỏi, tiêu, su hào và cà rốt ngâm giòn giòn. Phần thịt nướng nóng hổi, thơm phức mùi than hoa, ăn cùng bún tươi và rau sống, tất cả hòa quyện tạo nên một trải nghiệm ẩm thực đầy cảm xúc.
+                </p></h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://static.tuoitre.vn/tto/i/s626/2016/05/23/obama-1464016717.jpg"
+                  alt="Ảnh Tổng Thống Obama Ăn Bún Chả (Ảnh sưu tầm)"
+                  class="food-image" />
+              </div>
+               <p><h3>
+                  Trong chuyến công du tới Việt Nam hồi tháng 5/2016, cựu Tổng thống Mỹ Barack Obama đã tới quán bún chả Hương Liên trên phố Lê Văn Hưu, gọi 2 suất bún chả và 2 chai bia, cùng thưởng thức với đầu bếp quá cố Anthony Bourdain.
+                </p></h3>
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Bún chả Hương Liên: 24 Phố Lê Văn Hưu, Q.Hai Bà Trưng</li>
+                  <li>Bún chả Đắc Kim: 1 Hàng Mành, Q.Hoàn Kiếm</li>
+                  <li>Bún chả Sinh Từ: 57 Nguyễn Khuyến, Q.Đống Đa</li>
+                </ul>
+              </div>
+            </div>
+
+
+             <div class="food-module">
+              <h3>4. Bún Ốc Hà Nội - Món Ăn Sáng Nổi Tiếng Hà Nội</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1611205493/blog/sb0hdewypxzruulmc66j.webp"
+                  alt="Ảnh Món Bún Ốc (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Không cần cao lương mỹ vị, bún ốc Hà Nội chinh phục thực khách bằng chính sự giản dị và tinh tế của mình. Món ăn được làm từ những nguyên liệu quen thuộc như ốc nhồi hoặc ốc vặn, bún tươi, cà chua chín mọng, cùng rau thơm và gia vị dân dã. Vậy mà khi kết hợp lại, tất cả tạo nên một bát bún đậm đà, nóng hổi, khiến ai ăn một lần cũng nhớ mãi.
+Nước dùng của bún ốc trong, thanh nhưng lại có chiều sâu vị giác – được ninh kỹ từ xương và nước luộc ốc, thêm chút giấm bỗng cho vị chua nhẹ đặc trưng. Màu sắc bắt mắt, hương thơm dìu dịu, vị cay nồng của ớt và mùi thơm của tía tô khiến món ăn này không chỉ làm ấm lòng người Hà Nội trong những sáng sớm mùa thu, mà còn trở thành món khoái khẩu cho du khách phương xa mỗi lần ghé thăm thủ đô.
+                </p></h3>
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Bún ốc Giang – 36 Lương Ngọc Quyến, Q. Hoàn Kiếm</li>
+                  <li>Bún ốc sườn – 57 Hai Bà Trưng, Q, Hoàn Kiếm</li>
+                  <li>Bún ốc sườn Cô Sáu – Tầng trệt, 354 Bạch Mai, Q.Hai Bà Trưng</li>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="food-module">
+              <h3>5. Bánh Đa Cua - Món Ngon Hà Nội Có Thể Mua Về Làm Quà</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1596029294/blog/cyu9an476aezi7topycd.webp"
+                  alt="Ảnh Món Bánh Đa Cua (Ảnh sưu tầm)"
+                  class="food-image" />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Bạn có thể tìm thấy bánh đa cua tại nhiều thành phố khác tại miền Bắc, nhưng hương vị bánh đa cua Hà Nội mộc mạc, giản dị là điều khiến người ta khó quên. Sợi bánh đa dai dai ăn cùng nước dùng đậm vị, thêm chút giấm chua thanh thanh và ớt cay nồng là đúng chuẩn.
+                </p></h3>
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Bánh đa cua Hàng Đồng: 8 Hàng Đồng, Q.Hoàn Kiếm</li>
+                  <li>Bánh đa cua Phố Trung Liệt: 143 Trung Liệt, Q.Đống Đa</li>
+                  <li>Bánh đa cua và miến trộn Huỳnh Thúc Kháng: 16 Huỳnh Thúc Kháng, Q.Đống Đa</li>
+                </ul>
+              </div>
+            </div>
+
+
+              <div class="food-module">
+              <h3>6. Bún Thang – “Đệ Nhất Cầu Kỳ” Của Ẩm Thực Hà Thành</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1596029294/blog/vwgq3u7xwyvjpav6foox.webp"
+                  alt="Ảnh Món Bún Thang (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Nếu phải chọn ra món ăn tinh tế bậc nhất của Hà Nội, bún thang chắc chắn là ứng viên hàng đầu. Một tô bún thang đúng điệu cần đến hơn 20 loại nguyên liệu, từ trứng gà chiên mỏng thái chỉ, thịt gà luộc xé, giò lụa cắt lát, đến tôm khô, nấm hương, củ cải muối, rau răm, hành lá... Tất cả được sắp xếp khéo léo, tạo nên bức tranh ẩm thực đa sắc vừa đẹp mắt, vừa đầy hương vị. Phần nước dùng ngọt thanh từ xương gà hầm và tôm khô là linh hồn của món ăn, hòa quyện mọi nguyên liệu lại với nhau trong một tổng thể dịu dàng, thanh khiết.
+                </p></h3>
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Bún thang Cầu Gỗ: 48 Cầu Gỗ, Q.Hoàn Kiếm</li>
+                  <li>Bún thang Hàng Hòm: số 2 ngõ Hàng Chỉ, Hàng Hòm, Q.Hoàn Kiếm</li>
+                  <li>Bún thang Hàng Hành: 29 Hàng Hành, Hoàn Kiếm</li>
+                </ul>
+              </div>
+            </div>
+ 
+
+            <div class="food-module">
+              <h3>7. Bún Đậu Mắm Tôm - Món Ngon Hà Nội Không Thể Bỏ Lỡ</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1611205387/blog/keqqriwsenezsykmndq6.webp"
+                  alt="Ảnh Món Bún Đậu Mắm Tôm (Ảnh sưu tầm)"
+                  class="food-image" />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Trái ngược với sự thanh tao của bún thang, bún đậu mắm tôm lại mang dáng dấp của một món ăn dân dã, phá cách và đầy cá tính. Chỉ cần một mẹt nhỏ với bún rối, đậu rán vàng giòn, vài miếng chả cốm hoặc thịt luộc, ăn kèm với rau sống và mắm tôm pha sánh mịn là đủ gây thương nhớ.
+Mắm tôm chính là “linh hồn” của món ăn – thứ nước chấm có mùi hương đặc trưng gây chia phe: người mê mẩn, kẻ dè chừng. Nhưng một khi đã "vượt qua nỗi sợ hãi ban đầu", bạn sẽ phát hiện ra sự hòa quyện thú vị giữa vị mặn ngọt của mắm, béo của đậu, thơm của rau – khiến món ăn trở thành đặc sản không thể thiếu khi nhắc đến Hà Nội.
+                </p></h3>
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Bún đậu mắm tôm Ngõ Trạm: 1B Ngõ Trạm, Q.Hoàn Kiếm</li>
+                  <li>Bún đậu Trung Hương: 49 ngõ Phất Lộc, Hàng Bạc</li>
+                  <li>Bún đậu Cây Bàng – Đại La: 129 Đại La, Q.Hai Bà Trưng</li>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="food-module">
+              <h3>8. Nem Rán - Hà Nội</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://daotaobeptruong.vn/wp-content/uploads/2020/01/nem-ran-ha-noi.jpg"
+                  alt="Ảnh Món Nem Ráng (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Hà Nội tự hào với nem rán – món ăn “quốc dân” trong mọi buổi tụ tập bạn bè. Khác với nem lên men, nem rán Hà Nội có vị ngọt dịu từ thịt tươi và miến, cuốn chặt tay trong bánh đa nem, rồi chiên vàng ruộm trên chảo ngập dầu. Mỗi miếng nem giòn rụm, béo ngậy mà không ngán, lại được bày biện đẹp mắt khiến ai nhìn cũng muốn thử ngay. Một dĩa nem nóng hổi, một ly bia mát lạnh, thêm đôi câu chuyện phiếm – đó là “văn hóa ẩm thực đường phố” đặc trưng của giới trẻ Hà Nội mà ai cũng nên một lần trải nghiệm.
+                </p></h3>
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Nem nướng 10 Ấu Triệu, Hoàn Kiếm</li>
+                  <li>Nem nướng 46 Yên Phụ, Yên Phụ, Q.Tây Hồ</li>
+                  <li>Nem nướng 44 Yên Phụ Nhỏ, Tây Hồ</li>
+                </ul>
+              </div>
+            </div>
+
+            
+            <div class="food-module">
+              <h3>9. Chả Cá Lã Vọng - Đại Diện Ẩm Thực Hà Nội</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://i1-giadinh.vnecdn.net/2023/02/23/Bc9Thnhphm9-1677138455-9744-1677138711.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=U7uDXu87vxtbAQErDdBwcQ"
+                  alt="Ảnh Món Chả Cá Lã Vọng (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Nhắc đến đặc sản Hà Nội mà bỏ qua chả cá Lã Vọng thì quả là thiếu sót lớn. Món ăn được làm từ cá lăng – loại cá ít xương, thịt ngọt và săn chắc – sau khi tẩm ướp gia vị đậm đà sẽ được chiên vàng trong chảo mỡ nóng, dậy mùi thơm ngào ngạt.
+Điểm nhấn không thể thiếu chính là rau thì là, hành lá, bún tươi và mắm tôm pha, tất cả hòa quyện tạo nên hương vị béo, thơm và mằn mặn cực kỳ hấp dẫn. Dù là trong bữa cơm gia đình hay bữa ăn trưa nhanh gọn giữa lòng phố cổ, chả cá Lã Vọng luôn để lại dư vị khó quên cho bất kỳ ai từng thưởng thức.
+                </p></h3>
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Chả Cá Vọng Ngư: 29 Nguyễn Chí Thanh, Ba Đình</li>
+                  <li>Chả cá Thăng Long: Số 21 Đường Thành, Q.Hoàn Kiếm</li>
+                  <li>Chả cá Lão Ngư: Số 171 Thái Hà, Q.Hoàn Kiếm</li>
+                </ul>
+              </div>
+            </div>
+
+
+ <div class="food-module">
+              <h3>10. Bánh Cuốn Thanh Trì - Món Ăn Tối Ở Hà Nội Được Yêu Thích</h3>
+              <div class="food-detail-header">
+                <img
+                  src="https://statics.vinpearl.com/banh-cuon-thanh-tri-so-1_1679915069.jpg"
+                  alt="Ảnh Món Bánh Cuốn (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                   Bánh cuốn Thanh Trì là món sáng nhẹ nhàng nhưng khiến người ta “nhớ mãi không quên”. Lớp bánh tráng siêu mỏng, dai nhẹ, cuộn lấy phần nhân đơn giản gồm hành phi thơm và chút thịt băm. Không cầu kỳ, không nặng vị, bánh cuốn Thanh Trì chấm cùng nước mắm pha nhạt, ăn kèm chả lụa thơm mềm là đủ tạo nên một bữa sáng đậm chất Hà Nội.
+Nếu bạn muốn thử món ăn mang đầy hương vị xưa cũ của đất kinh kỳ, hãy dành thời gian dừng lại bên một hàng bánh cuốn Thanh Trì ven phố. Có thể bạn sẽ tìm được chút yên bình trong từng miếng bánh nóng hổi.
+                </p></h3>
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Bánh cuốn Bà Hoành: 66 Tô Hiến Thành, Bùi Thị Xuân, quận Hoàn Kiếm</li>
+                  <li>Bánh cuốn gia truyền Thanh Vân: 12-14 Hàng Gà, Hàng Bồ, quận Hoàn Kiếm</li>
+                  <li>Bánh cuốn Bà Xuân: dốc Hòe Nhai, Nguyễn Trung Trực, quận Ba Đình</li>
+                </ul>
+              </div>
+            </div>
+
+            
+          </section>
+        </main>
+
+      
+        <aside id="right-sidebar">
+          <h3>Ẩm thực theo các tỉnh thành</h3>
+         <div class="search-box">
+           <form autocomplete="off" id="search_form">
+              <div class="autocomplete">
+                <input
+                  id="myInput"
+                  type="text"
+                  name="myCountry"
+                  placeholder="Tìm kiếm"
+                />
+              </div>
+              <input type="submit" />
+              <span></span>
+            </form>
+          </div>
+
+          <div class="social-links">
+            <a
+              href="https://zalo.me/0589368989"
+              target="_blank"
+              class="social-icon zalo-icon"
+              ><i class="fas fa-comment-dots"></i> Zalo</a
+            >
+            <a
+              href="https://www.facebook.com/Lmt8989?locale=vi_VN"
+              target="_blank"
+              class="social-icon facebook-icon"
+              ><i class="fab fa-facebook-f"></i> Facebook</a
+            >
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        <p>&copy; Food VN. Món Ăn Đặc Sản Tỉnh Thành Việt Nam</p>
+      </footer>
+    </div>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="script.js"></script>
+  </body>
+</html>

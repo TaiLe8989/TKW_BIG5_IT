@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới Thiệu Ẩm Thực Tỉnh Thành Việt Nam</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script>
+      // Function to check if the user is logged in
+      function checkIfLoggedIn() {
+        const loggedInUser = localStorage.getItem("loggedInUser");
+
+        // If user is logged in, return the user object
+        return JSON.parse(loggedInUser);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app-container">
+      <header>
+        <button id="hamburger-btn" class="menu-icon" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <h1 class="logo">Ẩm Thực Đặc Sản Tỉnh Thành Việt Nam</h1>
+        <span id="welcomeMessage">
+            <a href='login.html' id='signin-btn' class='sign-in-btn'>Đăng Nhập</a>
+        </span>
+        <script>
+              // Function to display the username on the welcome page
+              function displayUsername() {
+                const user = checkIfLoggedIn();
+                const welcomeMessage =
+                  document.getElementById("welcomeMessage");
+
+                if (user) {
+                  welcomeMessage.innerText = "Welcome, " + user.username + "!";
+                }
+              }
+
+              // Call the displayUsername function on page load
+              displayUsername();
+            </script>
+
+        
+    
+        <!-- Menu dropdown -->
+        <nav id="dropdown-menu" class="dropdown-menu">
+          <a href="login.html">Đăng nhập</a>
+          <a href="about.html" id="about.html">Về chúng tôi</a>
+          <a href="index.html" id="home-link">Trang Chủ</a>
+        </nav>
+      </header>
+
+
+      <div id="main-structure">
+        <main id="main-content">
+          <section id="detail-page" class="view active-view">
+            <h2 class="detail-title">
+              GIỚI THIỆU ẨM THỰC <span id="city-name">Thành phố Hồ Chí Minh</span>
+            </h2>
+
+            <p class="city-overview"></p>
+
+            <hr />
+            <h3>
+            Thành phố Hồ Chí Minh là nơi giao thoa ẩm thực của nhiều vùng miền, tạo nên một thành phố có sự đa dạng về lựa chọn đặc sản.
+            Đó là tổng hòa của các luồng văn hóa, tạo nên một bản sắc rất riêng: đa dạng, phong phú, đậm chất đường phố và có tính giao thoa cao.
+            Điều này càng trở nên rõ ràng hơn khi thành phố Hồ Chí Minh được sáp nhập với tỉnh Bình Dương và Tỉnh Bà Rịa-Vũng Tàu.
+            Thành phố Hồ Chí Minh mới không chỉ là nơi giao thương mà còn là nơi sản sinh và bảo tồn các đặc sản địa phương.
+            </h3>
+            <hr />
+            <h2> Đặc sản Sài Gòn</h2>
+            <div class="food-module">
+              <h3>1.Cơm tấm</h3>
+              <div class="food-detail-header">
+                <img
+                  src="img/comtam.jpg"
+                  alt="Ảnh cơm tấm (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Được nấu từ hạt gạo bị vỡ, tạo nên món cơm có hạt nhỏ, dẻo và thơm đặc trưng.
+                  Cơm tấm thường được ăn kèm chung với sườn nướng, bì, chả trứng, và nước mắm chua ngọt.
+                  Ban đầu, cơm tấm là món ăn sáng của tầng lớp lao động nghèo vì chi phí rẻ và dễ chế biến.
+                  Theo thời gian, cơm tấm đã trở thành món ăn đặc trưng của Sài Gòn, thể hiện sự sáng tạo và tinh tế trong ẩm thực Việt Nam.Món ăn này có mặt ở nhiều địa điểm, từ các quán ăn lề đường bình dân cho đến những nhà hàng sang trọng, phản ánh sự thay đổi về ẩm thực và kinh tế. 
+                  Cơm tấm không chỉ là món ăn mà còn là biểu tượng văn hóa, thể hiện sự đa dạng và phong phú của ẩm thực Sài Gòn.
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Cơm tấm Mười: Số 294/35 Đ. Xô Viết Nghệ Tĩnh, TP. Hồ Chí Minh</li>
+                  <li>Cơm tấm Cô Phượng: Số 241/8 Đ. Bến Vân Đồn, TP. Hồ Chí Minh</li>
+                  <li>Cơm tấm Hoà:Số 415 Đ. Hậu Giang, TP. Hồ Chí Minh.</li>
+                </ul>
+              </div>
+            </div>
+
+            
+            <div class="food-module">
+              <h3>2.Phở Sài Gòn</h3>
+              <div class="food-detail-header">
+                <img
+                  src="img/pho.jpg"
+                  alt="Ảnh Món Phở (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Là phiên bản phở có hương vị đậm đà, ngọt thanh và nhiều màu sắc hơn phở Bắc, với nước dùng thường có màu hơi đục hơn, được nêm nếm ngọt hơn và có thể thêm các gia vị như mực khô hoặc hành gừng nướng. 
+                  Phở Sài Gòn đặc trưng bởi phần thịt bò đa dạng các loại như nạm, gầu, gân, cùng với các loại rau sống ăn kèm như húng quế, ngò gai, giá đỗ và một chén nước béo riêng cho người thích.
+                  Ngoài ra cũng có thể ăn kèm với tương đen, tương ớt, chanh, ớt sừng xắt miếng, sa tế, tiêu, và đôi khi là ớt xay.
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Phở Hùng – quán phở Sài Gòn được Michelin đề xuất: 241 Đ. Nguyễn Trãi và 288 Đ. Nguyễn Tri Phương, TP. Hồ Chí Minh.</li>
+                  <li>Phở Cao Vân  - quán phở có tuổi đời hơn 60 năm:Số 25 Đ. Mạc Đĩnh Chi, TP. Hồ Chí Minh </li>
+                  <li>Phở Minh: 63/6 Đ. Pasteur, TP. Hồ Chí Minh.</li>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="food-module">
+              <h3>3.Hủ Tiếu Nam Vang</h3>
+              <div class="food-detail-header">
+                <img
+                  src="img/hutieunamvang.jpg"
+                  alt="Ảnh Món Hủ Tiếu Nam Vang(Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Món ăn phổ biến với nước dùng đậm đà, sợi hủ tiếu dai. 
+                  Bắt nguồn từ Campuchia (Phnom Penh), được chế biến lại cho phù hợp với khẩu vị người Việt. 
+                  Nước dùng được ninh từ xương ống, mực khô, tôm khô, có vị thanh ngọt đặc trưng. 
+                  Có nhiều cách lựa chọn đồ ăn kèm với Hủ Tiếu Nam Vang như tôm, thịt băm, gan heo, lòng heo, tim, thịt băm, trứng cút, cua, mực... tùy theo yêu cầu của khách.
+                  Có hai loại chính là hủ tiếu nước (chan ngập nước lèo) và hủ tiếu khô (trộn với nước sốt sền sệt). 
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Hủ tiếu Nam Vang Nhân Quán: 122D, TP. Hồ Chí Minh và A23/9 QL50, TP. Hồ Chí Minh.</li>
+                  <li>Quán Ngọc Nhung:534 Nguyễn Thái Sơn, TP. Hồ Chí Minh</li>
+                  <li>Quán Trung Còi: 80 Cao Thắng, TP. Hồ Chí Minh.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="food-module">
+              <h3>4.Hủ Tiếu Gõ</h3>
+              <div class="food-detail-header">
+                <img
+                  src="img/hutieugo.jpg"
+                  alt="Ảnh Món Hủ Tiếu Gõ(Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Món ăn phổ biến với nước dùng đậm đà, sợi hủ tiếu dai. 
+                  Là một hình thức bán hàng di động, không phải là tên gọi của món ăn cụ thể.
+                  Bắt nguồn từ các tỉnh miền Tây, được du nhập và phổ biến tại các đô thị.
+                  Người bán sử dụng tiếng gõ hai thanh tre hoặc kim loại để báo hiệu, tìm khách ở các ngõ hẻm. 
+                  Người bán có xe đẩy ở một chỗ cố định hoặc di chuyển bằng xe máy, xe đạp để giao hàng tận nơi.
+                  Thường là các loại hủ tiếu bình dân như hủ tiếu bò viên, hủ tiếu thập cẩm. 
+                  Nước dùng được ninh từ xương ống, mực khô, tôm khô, có vị thanh ngọt đặc trưng.
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Hủ tiếu gõ Phạm Văn Hai: 154/56 Phạm Văn Hai, TP. Hồ Chí Minh.</li>
+                  <li>Quán hủ tiếu gõ Lý Thái Tổ:18 Lý Thái Tổ, TP. Hồ Chí Minh</li>
+                  <li>Quán hủ tiếu vỉa hè Quận 10 cũ: hẻm 449 Bà Hạt, TP. Hồ Chí Minh.</li>
+                  <li>Hủ tiếu gõ Sài Gòn sau cây xăng Lê Quang Định:Lê Quang Định, TP. Hồ Chí Minh.</li>
+                  <li>Hủ tiếu gõ 52 Trần Hưng Đạo: 52 Trần Hưng Đạo, TP. Hồ Chí Minh.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="food-module">
+              <h3>5. Bánh Mì Sài Gòn </h3>
+              <div class="food-detail-header">
+                <img
+                  src="img/banhmi.jpg"
+                  alt="Ảnh Món Bánh Mì Sài Gòn (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Là món ăn biểu tượng văn hóa ẩm thực của thành phố, với nguồn gốc từ baguette của Pháp nhưng được biến tấu để mang đậm nét Việt Nam. 
+                  Món ăn này nổi tiếng với lớp vỏ giòn, ruột mềm và nhân đa dạng, kết hợp giữa ẩm thực phương Tây và phương Đông. 
+                  Bánh mì Sài Gòn không chỉ là món ăn tiện lợi và bình dân mà còn là biểu tượng ẩm thực được vinh danh trên toàn thế giới. 
+                  Đặc biệt nổi tiếng với các phiên bản như Bánh mì Bì, Bánh mì Xíu mại, Bánh mì Thịt nướng, hay Bánh mì Chả lụa.
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Bánh mì Bảy Hổ: 19 Đ. Huỳnh Khương Ninh và số 148 Đ. Nguyễn Văn Thủ, TP. Hồ Chí Minh.</li>
+                  <li>Bánh mì Huỳnh Hoa:Số 26 – 30 – 32 Đ. Lê Thị Riêng, TP. Hồ Chí Minh</li>
+                  <li>Bánh mì Bà Huynh:  Số 185K Đ. Cống Quỳnh, TP. Hồ Chí Minh.</li>
+                </ul>
+              </div>
+            </div>
+
+            <hr />
+            <h2> Đặc sản Bình Dương</h2>
+            <div class="food-module">
+              <h3>1.Gỏi Gà Măng Cụt Lái Thiêu</h3>
+              <div class="food-detail-header">
+                <img
+                  src="img/goigamangcut.png"
+                  alt="Ảnh Gỏi Gà Măng Cụt Lái Thiêu (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Là một món ăn đặc sản nổi tiếng của vùng đất Lái Thiêu, tỉnh Bình Dương, được làm từ thịt gà dai ngọt và măng cụt xanh giòn chua. 
+                  Món gỏi "theo mùa" độc đáo, kết hợp vị giòn ngọt thanh mát của măng cụt vừa ửng chín với thịt gà xé phay.
+                  Gà ta luộc chín, xé nhỏ, có vị dai ngọt tự nhiên.
+                  Loại măng cụt còn vỏ xanh hoặc chỉ hơi chuyển vàng, có vị chua giòn chứ không ngọt mềm. 
+                  Măng cụt sống có độ giòn và chua đặc trưng, được gọt vỏ cẩn thận.
+                  Nước xốt chua ngọt được pha chế tỉ mỉ, đậm đà, giúp các nguyên liệu hòa quyện với nhau. 
+                  Thường được ăn kèm với các món như bánh phồng tôm, muối tiêu tắc, cháo nấm rơm, làm tăng thêm sự hấp dẫn cho món gỏi.
+                  Năm 2022, gỏi gà măng cụt được công nhận là món ăn đặc sản của Bình Dương.
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Chiều Nay Quán: 1045 Lê Hồng Phong, Thủ Dầu Một, Bình Dương.</li>
+                  <li>Vườn Xưa Quán: An Thạnh N12, An Thạnh, Thuận An, Bình Dương</li>
+                  <li>Vườn Măng Bình Nhâm:Đường Bình Nhâm 81, KP. Bình Đức, thành phố Thủ Dầu Một, Bình Dương.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="food-module">
+              <h3>2. Bò Nhúng Mắm Ruốc</h3>
+              <div class="food-detail-header">
+                <img
+                  src="img/bonhungmamruoc.jpg"
+                  alt="Ảnh Bò Nhúng Mắm Ruốc(Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Là một món lẩu đặc sản phổ biến, nổi tiếng ở Bình Dương và có nguồn gốc từ miền Trung, với sự kết hợp hài hòa giữa thịt bò mềm ngọt và hương vị đặc trưng, đậm đà của mắm ruốc. 
+                  Nước dùng lẩu được nấu từ mắm ruốc, thường thêm sả, dứa, nước cốt dừa hoặc 7Up, tạo nên hương vị thơm nồng, chua ngọt. 
+                  Món này thường ăn kèm với bún, bánh tráng và nhiều loại rau sống như đọt bí, rau muống, kèo nèo, tần ô. 
+                  Hương vị thì đậm đà, thơm nồng mùi mắm ruốc, kết hợp với vị ngọt tự nhiên của thịt bò và sự thanh mát của rau ăn kèm. 
+                  Nồi nước dùng có vị đặc trưng của mắm ruốc, sả, thường được tăng thêm hương vị chua ngọt từ dứa, nước dừa hoặc nước ngọt như 7UP.
+                  Sử dụng thịt bò tươi, thái lát mỏng để khi nhúng vào nồi lẩu chín nhanh, mềm và thấm đẫm gia vị.
+                  Đa dạng với bún, bánh tráng, và các loại rau như rau muống, đọt bí, rau đắng, kèo nèo, tần ô, giúp cân bằng hương vị món ăn.
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Lẩu bò mắm ruốc 8 còn:  720 Nguyễn Tri Phương, Thủ Dầu Một, Bình Dương.</li>
+                  <li>Lẩu bò nhúng mắm ruốc 1988: Đình Thần, Thủ Dầu Một, Bình Dương.</li>
+                  <li>Quán ăn Thanh Tâm:1346 Cách Mạng Tháng 8, Thủ Dầu Một, Bình Dương</li>
+                </ul>
+              </div>
+            </div>
+
+            <hr />
+            <h2> Đặc sản Bà Rịa - Vũng Tàu</h2>
+            <div class="food-module">
+              <h3>1.Hải sản tươi sống</h3>
+              <div class="food-detail-header">
+                <img
+                  src="img/haisan.webp"
+                  alt="Ảnh Hải Sản (Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                  Vũng tàu là thành phố biển với đa dạng các loại hải sản như:
+                    <ul>
+                        <li>Tôm, cua, ghẹ là các loại hải sản phổ biến, giá cả phải chăng, thịt chắc ngọt</li>
+                        <li>Cá thì có nhiều loại cá tươi ngon, được đánh bắt hằng ngày như: cá nục, cá cơm, cá bạc má,.....</li>
+                        <li>Ốc cũng có đa dạng chủng loại như ốc hương,ốc móng tay, ốc nón, ốc len,....</li>
+                        <li>Mực thì tươi sống với nhiều kích cỡ và loại như: mực lá, mực nang, mực trứng,...</li>
+                    </ul>
+
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Nhà hàng Gành Hào: Số 3 Trần Phú, P. Vũng Tàu; Số 9 Hạ Long, P. Vũng Tàu.</li>
+                  <li>Quán hải sản Hùng Chi: Đường Ông Ích Khiêm, P. Tam Thắng</li>
+                  <li>Hải sản Bờ Biển:Số 32 Hạ Long, P. Vũng Tàu.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="food-module">
+              <h3>2. Bánh Khọt Vũng Tàu</h3>
+              <div class="food-detail-header">
+                <img
+                  src="img/banhkhot.jpg"
+                  alt="Ảnh bánh khọt Vũng Tàu(Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                 Là món ăn dân dã nổi tiếng, có lớp vỏ bánh giòn rụm, nhân tôm tươi hoặc các loại nhân khác, và được ăn kèm rau sống tươi cùng nước mắm chua ngọt. 
+                 Món ăn này có nguồn gốc từ món bánh căn của các tỉnh Ninh Thuận, Bình Thuận nhưng được biến tấu với lớp bột mỏng và nhân đa dạng hơn, trở thành một đặc sản không thể bỏ qua khi đến Vũng Tàu. 
+                 Lớp vỏ ngoài giòn tan, trong khi phần ruột bên trong dẻo mềm, không ngấy dầu mỡ. Nhân bánh đa dạng, phổ biến nhất là tôm, ngoài ra còn có mực xay, thịt bằm hoặc chả cá. 
+                 Bánh được ăn kèm với rau sống tươi xanh, gỏi đu đủ chua ngọt và nước mắm pha chua ngọt đậm đà.
+                 Năm 2012, bánh khọt Vũng Tàu được Trung tâm Kỷ lục Việt Nam xác lập kỷ lục châu Á. 
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Bánh khọt Bà Hai:  số 42 Trần Đồng, phường 3, thành phố Vũng Tàu, tỉnh Bà Rịa – Vũng Tàu.</li>
+                  <li>Bánh khọt Gốc Vú Sữa: số 14 Nguyễn Trường Tộ, phường 2, thành phố Vũng Tàu, tỉnh Bà Rịa – Vũng Tàu.</li>
+                  <li>Quán bánh khọt 14 Hoàng Hoa Thám:14 Hoàng Hoa Thám, phường 3, thành phố Vũng Tàu, tỉnh Bà Rịa – Vũng Tàu</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="food-module">
+              <h3>3. Lẩu Cá Đuối</h3>
+              <div class="food-detail-header">
+                <img
+                  src="img/laucaduoi.png"
+                  alt="Ảnh Lẩu Cá Đuối(Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                 Là món đặc sản nổi tiếng với hương vị chua cay đậm đà, thịt cá dai ngọt và nước dùng được nấu từ măng chua. 
+                 Món này thường ăn kèm với bún và các loại rau sống như rau muống, bắp chuối, bạc hà, tạo nên một sự kết hợp hài hòa, hấp dẫn, và rất khác biệt so với các vùng miền khác. 
+                 Cá đuối tươi ngon, có thớ thịt săn chắc và ít xương, mang lại cảm giác sần sật thú vị khi ăn.Nước lẩu có vị chua thanh của măng muối, cay nồng của ớt, hòa quyện với vị ngọt tự nhiên của cá. 
+                 Thường có rau muống, bắp chuối, bạc hà, đậu bắp và rau mầm, giúp cân bằng vị giác và tăng thêm hương vị. 
+                 Thịt cá chín tới, săn lại, có thể chấm với nước mắm nguyên chất pha ớt cay để tăng thêm độ đậm đà.
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Quán lẩu cá đuối ngon Vũng Tàu - Khê:  36/1 Trần Hưng Đạo, Phường 1, Vũng Tàu, Bà Rịa - Vũng Tàu.</li>
+                  <li>Lẩu cá đuối - Bà Sáu: 158 Hạ Long, Phường 2, Vũng Tàu, Bà Rịa - Vũng Tàu.</li>
+                  <li>Lẩu cá đuối Hoàng Minh - Chính Hiệu Vũng Tàu:44 Trương Công Định, Phường 3, Vũng Tàu, Bà Rịa - Vũng Tàu</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="food-module">
+              <h3>4 .Bánh bông lan trứng muối</h3>
+              <div class="food-detail-header">
+                <img
+                  src="img/banhbonglantrungmuoi.jpg"
+                  alt="Ảnh Bánh bông lan trứng muối(Ảnh sưu tầm)"
+                  class="food-image"
+                />
+              </div>
+              <div class="food-info">
+                <p><h3>
+                 Là một đặc sản nổi tiếng của Vũng Tàu, xuất hiện từ khoảng thập niên 50 thế kỷ 20. 
+                 Loại bánh này nổi bật với kết cấu bông lan mềm xốp kết hợp vị mặn béo của trứng muối, thêm chà bông và sốt bơ, thường được bán với kích thước nhỏ gọn, dễ ăn và là món quà lưu niệm phổ biến. 
+                 Sự kết hợp độc đáo giữa bánh bông lan mềm mịn, chà bông mặn mặn và trứng muối beo béo tạo nên hương vị đặc trưng hấp dẫn, làm hài lòng cả du khách và người dân địa phương. 
+                 Bánh thường được làm nhỏ gọn, có kích thước vừa phải, dễ dàng thưởng thức và mang đi.
+                 Ngoài trứng muối và chà bông, nhiều tiệm còn có thêm phô mai và nhiều loại sốt khác nhau.
+                </p></h3>
+
+                <h4>Giới thiệu Quán:</h4>
+                <ul>
+                  <li>Bánh bông lan trứng muối Gốc Cột ĐIện:: 17B Nguyễn Trường Tộ, phường Vũng Tàu.</li>
+                  <li>Bánh bông lan trứng muối Tấn Phát: 131 Lê Lai, phường Vũng Tàu.</li>
+                  <li>Bánh bông lan trứng muối lá dứa Quang Bình:33 Nguyễn Trường Tộ, Phường Vũng Tàu</li>
+                </ul>
+              </div>
+            </div>
+
+
+          </section>
+        </main>
+
+    <aside id="right-sidebar">
+          <h3>Ẩm thực theo các tỉnh thành</h3>
+         <div class="search-box">
+           <form autocomplete="off" id="search_form">
+              <div class="autocomplete">
+                <input
+                  id="myInput"
+                  type="text"
+                  name="myCountry"
+                  placeholder="Tìm kiếm"
+                />
+              </div>
+              <input type="submit" />
+              <span></span>
+            </form>
+          </div>
+
+          <div class="social-links">
+            <a
+              href="https://zalo.me/0589368989"
+              target="_blank"
+              class="social-icon zalo-icon"
+              ><i class="fas fa-comment-dots"></i> Zalo</a
+            >
+            <a
+              href="https://www.facebook.com/Lmt8989?locale=vi_VN"
+              target="_blank"
+              class="social-icon facebook-icon"
+              ><i class="fab fa-facebook-f"></i> Facebook</a
+            >
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        <p>&copy; Food VN. Món ăn đặc sản tỉnh thành.</p>
+      </footer>
+    </div>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="script.js"></script>
+  </body>
+</html>
